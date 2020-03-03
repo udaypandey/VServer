@@ -1,0 +1,6 @@
+framework module Pods_VServer {
+  umbrella header "Pods-VServer-umbrella.h"
+
+  export *
+  module * { export * }
+}
