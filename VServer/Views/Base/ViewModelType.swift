@@ -17,4 +17,7 @@ protocol ViewModeType {
 
     // Defines the events towards coordinator
     associatedtype Flows
+
+    // Defines the events towards coordinator
+    associatedtype Texts
 }

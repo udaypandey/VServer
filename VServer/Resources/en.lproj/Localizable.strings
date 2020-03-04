@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  VServer
+
+  Created by Uday Pandey on 04/03/2020.
+  Copyright © 2020 Thirstysea Ltd. All rights reserved.
+*/
+
+"vserver.common.button.ok" = "OK";
+
+"vserver.server.text.welcome" = "Enter server address";
+"vserver.server.text.placeholder" = "Enter server address";

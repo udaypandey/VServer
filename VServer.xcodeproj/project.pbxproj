@@ -12,8 +12,6 @@
 		1C0CB4EF240EFB4600F7DD32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0CB4ED240EFB4600F7DD32 /* Main.storyboard */; };
 		1C0CB4F1240EFB4700F7DD32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C0CB4F0240EFB4700F7DD32 /* Assets.xcassets */; };
 		1C0CB4F4240EFB4700F7DD32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0CB4F2240EFB4700F7DD32 /* LaunchScreen.storyboard */; };
-		1C0CB4FF240EFB4700F7DD32 /* VServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB4FE240EFB4700F7DD32 /* VServerTests.swift */; };
-		1C0CB50A240EFB4700F7DD32 /* VServerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB509240EFB4700F7DD32 /* VServerUITests.swift */; };
 		1C0CB51F240F031D00F7DD32 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB51E240F031D00F7DD32 /* ViewModelType.swift */; };
 		1C0CB521240F4CE700F7DD32 /* ServerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB520240F4CE700F7DD32 /* ServerViewModel.swift */; };
 		1C0CB523240F4D0400F7DD32 /* ServerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB522240F4D0400F7DD32 /* ServerViewController.swift */; };
@@ -23,7 +21,11 @@
 		1C0CB52B240F4D9600F7DD32 /* ServerViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB52A240F4D9600F7DD32 /* ServerViewControllerSnapshotTests.swift */; };
 		1C0CB52E240F4E0700F7DD32 /* CoorindatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB52D240F4E0700F7DD32 /* CoorindatorType.swift */; };
 		1C0CB530240F4E3400F7DD32 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB52F240F4E3400F7DD32 /* Coordinator.swift */; };
-		1C0CB534240F50FE00F7DD32 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB533240F50FE00F7DD32 /* Networking.swift */; };
+		1C0CB53B240FC11A00F7DD32 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB53A240FC11A00F7DD32 /* Validator.swift */; };
+		1C0CB53D240FC13300F7DD32 /* ValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB53C240FC13300F7DD32 /* ValidatorTests.swift */; };
+		1C0CB59D240FD0C700F7DD32 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C0CB59F240FD0C700F7DD32 /* Localizable.strings */; };
+		1C0CB5A3240FD1B200F7DD32 /* String+VServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB5A2240FD1B200F7DD32 /* String+VServer.swift */; };
+		1C0CB5A7240FD66F00F7DD32 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB5A6240FD66F00F7DD32 /* Networking.swift */; };
 		2AD0EE4B2B2835CCBC06005D /* Pods_VServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC8142410BDEDC0E5AD64F4 /* Pods_VServer.framework */; };
 		C9C1E50F7B3E1FEFB53C5F5F /* Pods_VServer_VServerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59003E6C1C7C1D950F7E2B3 /* Pods_VServer_VServerUITests.framework */; };
 		D50A6D65DC7B8F9F987C0AB5 /* Pods_VServerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B7F228526DAE1C41F09591 /* Pods_VServerTests.framework */; };
@@ -55,10 +57,8 @@
 		1C0CB4F3240EFB4700F7DD32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C0CB4F5240EFB4700F7DD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C0CB4FA240EFB4700F7DD32 /* VServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C0CB4FE240EFB4700F7DD32 /* VServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VServerTests.swift; sourceTree = "<group>"; };
 		1C0CB500240EFB4700F7DD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C0CB505240EFB4700F7DD32 /* VServerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VServerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C0CB509240EFB4700F7DD32 /* VServerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VServerUITests.swift; sourceTree = "<group>"; };
 		1C0CB50B240EFB4700F7DD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C0CB51E240F031D00F7DD32 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		1C0CB520240F4CE700F7DD32 /* ServerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerViewModel.swift; sourceTree = "<group>"; };
@@ -69,7 +69,15 @@
 		1C0CB52A240F4D9600F7DD32 /* ServerViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		1C0CB52D240F4E0700F7DD32 /* CoorindatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoorindatorType.swift; sourceTree = "<group>"; };
 		1C0CB52F240F4E3400F7DD32 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		1C0CB533240F50FE00F7DD32 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		1C0CB53A240FC11A00F7DD32 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		1C0CB53C240FC13300F7DD32 /* ValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorTests.swift; sourceTree = "<group>"; };
+		1C0CB53E240FC69A00F7DD32 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1C0CB598240FD0B000F7DD32 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		1C0CB599240FD0B000F7DD32 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		1C0CB59E240FD0C700F7DD32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1C0CB5A0240FD0CB00F7DD32 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1C0CB5A2240FD1B200F7DD32 /* String+VServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+VServer.swift"; sourceTree = "<group>"; };
+		1C0CB5A6240FD66F00F7DD32 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		43A5C25CA618F1099EDF11B6 /* Pods-VServerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VServerTests.debug.xcconfig"; path = "Target Support Files/Pods-VServerTests/Pods-VServerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5708F70223FCCDBDBCF329C1 /* Pods-VServerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VServerTests.release.xcconfig"; path = "Target Support Files/Pods-VServerTests/Pods-VServerTests.release.xcconfig"; sourceTree = "<group>"; };
 		766FB39E53E89ADB105DE4A0 /* Pods-VServer-VServerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VServer-VServerUITests.release.xcconfig"; path = "Target Support Files/Pods-VServer-VServerUITests/Pods-VServer-VServerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +130,8 @@
 		1C0CB4DD240EFB4600F7DD32 = {
 			isa = PBXGroup;
 			children = (
+				1C0CB53E240FC69A00F7DD32 /* README.md */,
+				1C0CB5A5240FD66F00F7DD32 /* Vaion */,
 				1C0CB4E8240EFB4600F7DD32 /* VServer */,
 				1C0CB4FD240EFB4700F7DD32 /* VServerTests */,
 				1C0CB508240EFB4700F7DD32 /* VServerUITests */,
@@ -144,9 +154,11 @@
 		1C0CB4E8240EFB4600F7DD32 /* VServer */ = {
 			isa = PBXGroup;
 			children = (
-				1C0CB531240F50AF00F7DD32 /* Network */,
 				1C0CB52C240F4DEA00F7DD32 /* Coordinator */,
+				1C0CB531240F50AF00F7DD32 /* Network */,
 				1C0CB518240F02BE00F7DD32 /* Views */,
+				1C0CB5A1240FD19A00F7DD32 /* Helper */,
+				1C0CB59A240FD0B600F7DD32 /* Resources */,
 				1C0CB517240F02B000F7DD32 /* Main */,
 				1C0CB4F0240EFB4700F7DD32 /* Assets.xcassets */,
 				1C0CB4F2240EFB4700F7DD32 /* LaunchScreen.storyboard */,
@@ -158,7 +170,6 @@
 		1C0CB4FD240EFB4700F7DD32 /* VServerTests */ = {
 			isa = PBXGroup;
 			children = (
-				1C0CB4FE240EFB4700F7DD32 /* VServerTests.swift */,
 				1C0CB500240EFB4700F7DD32 /* Info.plist */,
 			);
 			path = VServerTests;
@@ -167,7 +178,6 @@
 		1C0CB508240EFB4700F7DD32 /* VServerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				1C0CB509240EFB4700F7DD32 /* VServerUITests.swift */,
 				1C0CB50B240EFB4700F7DD32 /* Info.plist */,
 			);
 			path = VServerUITests;
@@ -186,6 +196,7 @@
 		1C0CB518240F02BE00F7DD32 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1C0CB535240FC10C00F7DD32 /* Validator */,
 				1C0CB51D240F030E00F7DD32 /* Base */,
 				1C0CB51C240F02FB00F7DD32 /* Failure */,
 				1C0CB51B240F02F200F7DD32 /* Success */,
@@ -249,15 +260,39 @@
 		1C0CB531240F50AF00F7DD32 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				1C0CB532240F50C000F7DD32 /* Vaion */,
 			);
 			path = Network;
 			sourceTree = "<group>";
 		};
-		1C0CB532240F50C000F7DD32 /* Vaion */ = {
+		1C0CB535240FC10C00F7DD32 /* Validator */ = {
 			isa = PBXGroup;
 			children = (
-				1C0CB533240F50FE00F7DD32 /* Networking.swift */,
+				1C0CB53A240FC11A00F7DD32 /* Validator.swift */,
+				1C0CB53C240FC13300F7DD32 /* ValidatorTests.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		1C0CB59A240FD0B600F7DD32 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C0CB59F240FD0C700F7DD32 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1C0CB5A1240FD19A00F7DD32 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1C0CB5A2240FD1B200F7DD32 /* String+VServer.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		1C0CB5A5240FD66F00F7DD32 /* Vaion */ = {
+			isa = PBXGroup;
+			children = (
+				1C0CB5A6240FD66F00F7DD32 /* Networking.swift */,
 			);
 			path = Vaion;
 			sourceTree = "<group>";
@@ -284,9 +319,10 @@
 			buildPhases = (
 				B091A1C28C8E236D6F12311E /* [CP] Check Pods Manifest.lock */,
 				1C0CB4E2240EFB4600F7DD32 /* Sources */,
+				DFB0239877068BC5B3A64197 /* [CP] Embed Pods Frameworks */,
 				1C0CB4E3240EFB4600F7DD32 /* Frameworks */,
 				1C0CB4E4240EFB4600F7DD32 /* Resources */,
-				DFB0239877068BC5B3A64197 /* [CP] Embed Pods Frameworks */,
+				1C0CB5A4240FD42000F7DD32 /* SwiftLint Abracadabra */,
 			);
 			buildRules = (
 			);
@@ -367,6 +403,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 1C0CB4DD240EFB4600F7DD32;
 			productRefGroup = 1C0CB4E7240EFB4600F7DD32 /* Products */;
@@ -385,6 +422,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0CB59D240FD0C700F7DD32 /* Localizable.strings in Resources */,
 				1C0CB4F4240EFB4700F7DD32 /* LaunchScreen.storyboard in Resources */,
 				1C0CB4F1240EFB4700F7DD32 /* Assets.xcassets in Resources */,
 				1C0CB4EF240EFB4600F7DD32 /* Main.storyboard in Resources */,
@@ -409,6 +447,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1C0CB5A4240FD42000F7DD32 /* SwiftLint Abracadabra */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Abracadabra";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
 		8404757F615C78B0F5A75A85 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -534,10 +590,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C0CB52E240F4E0700F7DD32 /* CoorindatorType.swift in Sources */,
+				1C0CB5A7240FD66F00F7DD32 /* Networking.swift in Sources */,
 				1C0CB4EC240EFB4600F7DD32 /* ViewController.swift in Sources */,
+				1C0CB5A3240FD1B200F7DD32 /* String+VServer.swift in Sources */,
 				1C0CB4EA240EFB4600F7DD32 /* AppDelegate.swift in Sources */,
-				1C0CB534240F50FE00F7DD32 /* Networking.swift in Sources */,
 				1C0CB51F240F031D00F7DD32 /* ViewModelType.swift in Sources */,
+				1C0CB53B240FC11A00F7DD32 /* Validator.swift in Sources */,
 				1C0CB523240F4D0400F7DD32 /* ServerViewController.swift in Sources */,
 				1C0CB521240F4CE700F7DD32 /* ServerViewModel.swift in Sources */,
 				1C0CB530240F4E3400F7DD32 /* Coordinator.swift in Sources */,
@@ -548,7 +606,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C0CB4FF240EFB4700F7DD32 /* VServerTests.swift in Sources */,
+				1C0CB53D240FC13300F7DD32 /* ValidatorTests.swift in Sources */,
 				1C0CB52B240F4D9600F7DD32 /* ServerViewControllerSnapshotTests.swift in Sources */,
 				1C0CB527240F4D2600F7DD32 /* ServerViewModelTests.swift in Sources */,
 			);
@@ -558,7 +616,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C0CB50A240EFB4700F7DD32 /* VServerUITests.swift in Sources */,
 				1C0CB529240F4D6B00F7DD32 /* ServerViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,6 +640,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				1C0CB4EE240EFB4600F7DD32 /* Base */,
+				1C0CB598240FD0B000F7DD32 /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -591,8 +649,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				1C0CB4F3240EFB4700F7DD32 /* Base */,
+				1C0CB599240FD0B000F7DD32 /* fr */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1C0CB59F240FD0C700F7DD32 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C0CB59E240FD0C700F7DD32 /* en */,
+				1C0CB5A0240FD0CB00F7DD32 /* fr */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -602,6 +670,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -663,6 +732,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
