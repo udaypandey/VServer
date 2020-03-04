@@ -17,7 +17,6 @@ class ServerViewControllerUITests: XCTestCase {
         continueAfterFailure = false
 
         // Right now it runs by manually loading the right screen
-        
         app = XCUIApplication()
         app.launch()
     }

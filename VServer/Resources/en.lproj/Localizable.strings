@@ -9,4 +9,4 @@
 "vserver.common.button.ok" = "OK";
 
 "vserver.server.text.welcome" = "Enter server address";
-"vserver.server.text.placeholder" = "Enter server address";
+"vserver.server.text.placeholder" = "IP address";
