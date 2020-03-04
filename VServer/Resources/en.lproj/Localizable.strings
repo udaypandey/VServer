@@ -10,3 +10,4 @@
 
 "vserver.server.text.welcome" = "Enter server address";
 "vserver.server.text.placeholder" = "IP address";
+"vserver.success.text.welcome" = "Server successfully added to the cluster!";
