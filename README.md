@@ -2,23 +2,30 @@
 
 ## Salient Points
 
-- This is a prototype application to show a server onboarding journey.
+This is a prototype application to show a server onboarding journey. This is still WIP and I will continue to update the code. While there are only 3 screens that needs to be build, I have used the architecture that I may use for a real enterprise app. 
 
+The app code is structured accordingly and includes unit test cases, UI test cases and provision for snapshot testing.
+
+## Status
+
+- I have written the first screen using MVVM + Rx + Coordinator pattern. Its not integrated with the networking code yet.
+- I plan to wrap Networking library into a simple Rx wrapper to integrate with the View Model.
+- I hope to complete the task by end of the day.
 
 ## Implementation
 
-The app is written using RxSwift
-The app uses MVVM + Coordinator pattern.
-Unit Tests are written using XCTest
-UI Tests written are using XCUITest. I personally prefer to test individual screens instead of testing the screens in a flow as they tend to get fragile very soon. For this demonstration, I will not have the time to write the hooks and utility to load individual screens for testing and it will require to manually point to the right screen in AppDelegate. 
-Snapshots Tests will be written using Pointfree snapshot library. I will struggle to finish that though.
+- The app is written using RxSwift.
+- The app uses MVVM + Coordinator pattern.
+- Unit Tests are written using XCTest
+- UI Tests written are using XCUITest. I personally prefer to test individual screens instead of testing the screens in a flow as they tend to get fragile very soon. For this demonstration, I will not have the time to write the hooks and utility to load individual screens for testing and it will require to manually point to the right screen in AppDelegate. 
+- Snapshots Tests will be written using Pointfree snapshot library. I will struggle to finish that though.
 
 
 ## Styling
 
-- Not much effort has been put into styling. 
+- Not much effort has been put into styling. Instead I have put more effort on the architecture and the testability of the code.
 - All screens uses UIStackView for layout and screens are created in storyboard for quick iteration. The styling is done in both storyboard and in code though I prefer to do styling in code so it can be tested on its own.
-- Storyboards are used for creating View Controllers but the navigation is managed using Controller pattern and that will be unit tested too.
+- Storyboards are used for creating View Controllers but the navigation will be managed using Controller pattern and that will be unit tested too.
 
 
 ## Open Source + Sample Code
