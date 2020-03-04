@@ -16,4 +16,12 @@ extension UIViewController {
 
         return UINavigationController(rootViewController: viewController)
     }
+
+    static func successViewController() -> UIViewController {
+        let viewModel = SuccessViewModel()
+        let viewController: SuccessViewController = SuccessViewController.fromStoryboard("Success")
+        viewController.viewModel = viewModel
+
+        return UINavigationController(rootViewController: viewController)
+    }
 }

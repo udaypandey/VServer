@@ -30,16 +30,16 @@
 		1C3C96A52410090B00F9E5AC /* ViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96A42410090B00F9E5AC /* ViewHelper.swift */; };
 		1C3C96A724105F4C00F9E5AC /* SuccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96A624105F4C00F9E5AC /* SuccessViewModel.swift */; };
 		1C3C96A924105F5800F9E5AC /* SuccessViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96A824105F5800F9E5AC /* SuccessViewModelTests.swift */; };
-		1C3C96AB24105F6B00F9E5AC /* SuccessViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96AA24105F6B00F9E5AC /* SuccessViewControllerUITests.swift */; };
 		1C3C96AD24105F7C00F9E5AC /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96AC24105F7C00F9E5AC /* SuccessViewController.swift */; };
 		1C3C96AF24105F9400F9E5AC /* SuccessViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96AE24105F9400F9E5AC /* SuccessViewControllerSnapshotTests.swift */; };
 		1C3C96B124105FAD00F9E5AC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96B024105FAD00F9E5AC /* LoginViewModel.swift */; };
 		1C3C96B324105FBA00F9E5AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96B224105FBA00F9E5AC /* LoginViewController.swift */; };
 		1C3C96B524105FC800F9E5AC /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96B424105FC800F9E5AC /* LoginViewModelTests.swift */; };
-		1C3C96B724105FD800F9E5AC /* LoginViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96B624105FD800F9E5AC /* LoginViewControllerUITests.swift */; };
 		1C3C96B924105FE800F9E5AC /* LoginViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96B824105FE800F9E5AC /* LoginViewControllerSnapshotTests.swift */; };
 		1C3C96BB24105FF400F9E5AC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C3C96BA24105FF400F9E5AC /* Login.storyboard */; };
 		1C3C96BD24105FFE00F9E5AC /* Success.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C3C96BC24105FFE00F9E5AC /* Success.storyboard */; };
+		1C3C96BE2410661E00F9E5AC /* SuccessViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96AA24105F6B00F9E5AC /* SuccessViewControllerUITests.swift */; };
+		1C3C96BF2410662700F9E5AC /* LoginViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96B624105FD800F9E5AC /* LoginViewControllerUITests.swift */; };
 		2AD0EE4B2B2835CCBC06005D /* Pods_VServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC8142410BDEDC0E5AD64F4 /* Pods_VServer.framework */; };
 		C9C1E50F7B3E1FEFB53C5F5F /* Pods_VServer_VServerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59003E6C1C7C1D950F7E2B3 /* Pods_VServer_VServerUITests.framework */; };
 		D50A6D65DC7B8F9F987C0AB5 /* Pods_VServerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B7F228526DAE1C41F09591 /* Pods_VServerTests.framework */; };
@@ -662,7 +662,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C3C96B724105FD800F9E5AC /* LoginViewControllerUITests.swift in Sources */,
 				1C0CB53D240FC13300F7DD32 /* ValidatorTests.swift in Sources */,
 				1C0CB52B240F4D9600F7DD32 /* ServerViewControllerSnapshotTests.swift in Sources */,
 				1C3C96A924105F5800F9E5AC /* SuccessViewModelTests.swift in Sources */,
@@ -670,7 +669,6 @@
 				1C3C96AF24105F9400F9E5AC /* SuccessViewControllerSnapshotTests.swift in Sources */,
 				1C3C96B924105FE800F9E5AC /* LoginViewControllerSnapshotTests.swift in Sources */,
 				1C3C96B524105FC800F9E5AC /* LoginViewModelTests.swift in Sources */,
-				1C3C96AB24105F6B00F9E5AC /* SuccessViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,6 +676,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C3C96BF2410662700F9E5AC /* LoginViewControllerUITests.swift in Sources */,
+				1C3C96BE2410661E00F9E5AC /* SuccessViewControllerUITests.swift in Sources */,
 				1C3C96A2240FF7CD00F9E5AC /* XCUIElement+VServer.swift in Sources */,
 				1C0CB529240F4D6B00F7DD32 /* ServerViewControllerUITests.swift in Sources */,
 			);
