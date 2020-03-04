@@ -23,6 +23,7 @@
 		1C0CB52B240F4D9600F7DD32 /* ServerViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB52A240F4D9600F7DD32 /* ServerViewControllerSnapshotTests.swift */; };
 		1C0CB52E240F4E0700F7DD32 /* CoorindatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB52D240F4E0700F7DD32 /* CoorindatorType.swift */; };
 		1C0CB530240F4E3400F7DD32 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB52F240F4E3400F7DD32 /* Coordinator.swift */; };
+		1C0CB534240F50FE00F7DD32 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB533240F50FE00F7DD32 /* Networking.swift */; };
 		2AD0EE4B2B2835CCBC06005D /* Pods_VServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC8142410BDEDC0E5AD64F4 /* Pods_VServer.framework */; };
 		C9C1E50F7B3E1FEFB53C5F5F /* Pods_VServer_VServerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59003E6C1C7C1D950F7E2B3 /* Pods_VServer_VServerUITests.framework */; };
 		D50A6D65DC7B8F9F987C0AB5 /* Pods_VServerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B7F228526DAE1C41F09591 /* Pods_VServerTests.framework */; };
@@ -68,6 +69,7 @@
 		1C0CB52A240F4D9600F7DD32 /* ServerViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		1C0CB52D240F4E0700F7DD32 /* CoorindatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoorindatorType.swift; sourceTree = "<group>"; };
 		1C0CB52F240F4E3400F7DD32 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		1C0CB533240F50FE00F7DD32 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		43A5C25CA618F1099EDF11B6 /* Pods-VServerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VServerTests.debug.xcconfig"; path = "Target Support Files/Pods-VServerTests/Pods-VServerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5708F70223FCCDBDBCF329C1 /* Pods-VServerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VServerTests.release.xcconfig"; path = "Target Support Files/Pods-VServerTests/Pods-VServerTests.release.xcconfig"; sourceTree = "<group>"; };
 		766FB39E53E89ADB105DE4A0 /* Pods-VServer-VServerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VServer-VServerUITests.release.xcconfig"; path = "Target Support Files/Pods-VServer-VServerUITests/Pods-VServer-VServerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,12 +144,10 @@
 		1C0CB4E8240EFB4600F7DD32 /* VServer */ = {
 			isa = PBXGroup;
 			children = (
+				1C0CB531240F50AF00F7DD32 /* Network */,
 				1C0CB52C240F4DEA00F7DD32 /* Coordinator */,
-				1C0CB51D240F030E00F7DD32 /* Base */,
 				1C0CB518240F02BE00F7DD32 /* Views */,
 				1C0CB517240F02B000F7DD32 /* Main */,
-				1C0CB4EB240EFB4600F7DD32 /* ViewController.swift */,
-				1C0CB4ED240EFB4600F7DD32 /* Main.storyboard */,
 				1C0CB4F0240EFB4700F7DD32 /* Assets.xcassets */,
 				1C0CB4F2240EFB4700F7DD32 /* LaunchScreen.storyboard */,
 				1C0CB4F5240EFB4700F7DD32 /* Info.plist */,
@@ -176,6 +176,8 @@
 		1C0CB517240F02B000F7DD32 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				1C0CB4ED240EFB4600F7DD32 /* Main.storyboard */,
+				1C0CB4EB240EFB4600F7DD32 /* ViewController.swift */,
 				1C0CB4E9240EFB4600F7DD32 /* AppDelegate.swift */,
 			);
 			path = Main;
@@ -184,6 +186,7 @@
 		1C0CB518240F02BE00F7DD32 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1C0CB51D240F030E00F7DD32 /* Base */,
 				1C0CB51C240F02FB00F7DD32 /* Failure */,
 				1C0CB51B240F02F200F7DD32 /* Success */,
 				1C0CB51A240F02EB00F7DD32 /* Login */,
@@ -196,9 +199,9 @@
 			isa = PBXGroup;
 			children = (
 				1C0CB520240F4CE700F7DD32 /* ServerViewModel.swift */,
-				1C0CB522240F4D0400F7DD32 /* ServerViewController.swift */,
-				1C0CB524240F4D1300F7DD32 /* Server.storyboard */,
 				1C0CB526240F4D2600F7DD32 /* ServerViewModelTests.swift */,
+				1C0CB524240F4D1300F7DD32 /* Server.storyboard */,
+				1C0CB522240F4D0400F7DD32 /* ServerViewController.swift */,
 				1C0CB528240F4D6B00F7DD32 /* ServerViewControllerUITests.swift */,
 				1C0CB52A240F4D9600F7DD32 /* ServerViewControllerSnapshotTests.swift */,
 			);
@@ -241,6 +244,22 @@
 				1C0CB52F240F4E3400F7DD32 /* Coordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1C0CB531240F50AF00F7DD32 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1C0CB532240F50C000F7DD32 /* Vaion */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1C0CB532240F50C000F7DD32 /* Vaion */ = {
+			isa = PBXGroup;
+			children = (
+				1C0CB533240F50FE00F7DD32 /* Networking.swift */,
+			);
+			path = Vaion;
 			sourceTree = "<group>";
 		};
 		9D5A1A9542CC1F584F88C665 /* Pods */ = {
@@ -517,6 +536,7 @@
 				1C0CB52E240F4E0700F7DD32 /* CoorindatorType.swift in Sources */,
 				1C0CB4EC240EFB4600F7DD32 /* ViewController.swift in Sources */,
 				1C0CB4EA240EFB4600F7DD32 /* AppDelegate.swift in Sources */,
+				1C0CB534240F50FE00F7DD32 /* Networking.swift in Sources */,
 				1C0CB51F240F031D00F7DD32 /* ViewModelType.swift in Sources */,
 				1C0CB523240F4D0400F7DD32 /* ServerViewController.swift in Sources */,
 				1C0CB521240F4CE700F7DD32 /* ServerViewModel.swift in Sources */,
