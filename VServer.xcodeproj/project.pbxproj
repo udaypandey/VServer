@@ -15,7 +15,6 @@
 		1C0CB523240F4D0400F7DD32 /* ServerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB522240F4D0400F7DD32 /* ServerViewController.swift */; };
 		1C0CB527240F4D2600F7DD32 /* ServerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB526240F4D2600F7DD32 /* ServerViewModelTests.swift */; };
 		1C0CB529240F4D6B00F7DD32 /* ServerViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB528240F4D6B00F7DD32 /* ServerViewControllerUITests.swift */; };
-		1C0CB52B240F4D9600F7DD32 /* ServerViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB52A240F4D9600F7DD32 /* ServerViewControllerSnapshotTests.swift */; };
 		1C0CB52E240F4E0700F7DD32 /* CoorindatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB52D240F4E0700F7DD32 /* CoorindatorType.swift */; };
 		1C0CB530240F4E3400F7DD32 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB52F240F4E3400F7DD32 /* Coordinator.swift */; };
 		1C0CB53B240FC11A00F7DD32 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB53A240FC11A00F7DD32 /* Validator.swift */; };
@@ -31,15 +30,16 @@
 		1C3C96A724105F4C00F9E5AC /* SuccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96A624105F4C00F9E5AC /* SuccessViewModel.swift */; };
 		1C3C96A924105F5800F9E5AC /* SuccessViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96A824105F5800F9E5AC /* SuccessViewModelTests.swift */; };
 		1C3C96AD24105F7C00F9E5AC /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96AC24105F7C00F9E5AC /* SuccessViewController.swift */; };
-		1C3C96AF24105F9400F9E5AC /* SuccessViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96AE24105F9400F9E5AC /* SuccessViewControllerSnapshotTests.swift */; };
 		1C3C96B124105FAD00F9E5AC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96B024105FAD00F9E5AC /* LoginViewModel.swift */; };
 		1C3C96B324105FBA00F9E5AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96B224105FBA00F9E5AC /* LoginViewController.swift */; };
 		1C3C96B524105FC800F9E5AC /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96B424105FC800F9E5AC /* LoginViewModelTests.swift */; };
-		1C3C96B924105FE800F9E5AC /* LoginViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96B824105FE800F9E5AC /* LoginViewControllerSnapshotTests.swift */; };
 		1C3C96BB24105FF400F9E5AC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C3C96BA24105FF400F9E5AC /* Login.storyboard */; };
 		1C3C96BD24105FFE00F9E5AC /* Success.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C3C96BC24105FFE00F9E5AC /* Success.storyboard */; };
 		1C3C96BE2410661E00F9E5AC /* SuccessViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96AA24105F6B00F9E5AC /* SuccessViewControllerUITests.swift */; };
 		1C3C96BF2410662700F9E5AC /* LoginViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96B624105FD800F9E5AC /* LoginViewControllerUITests.swift */; };
+		1C3C96CE2410672600F9E5AC /* SuccessViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96AE24105F9400F9E5AC /* SuccessViewControllerSnapshotTests.swift */; };
+		1C3C96CF2410672D00F9E5AC /* LoginViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96B824105FE800F9E5AC /* LoginViewControllerSnapshotTests.swift */; };
+		1C3C96D02410673200F9E5AC /* ServerViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB52A240F4D9600F7DD32 /* ServerViewControllerSnapshotTests.swift */; };
 		2AD0EE4B2B2835CCBC06005D /* Pods_VServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC8142410BDEDC0E5AD64F4 /* Pods_VServer.framework */; };
 		C9C1E50F7B3E1FEFB53C5F5F /* Pods_VServer_VServerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59003E6C1C7C1D950F7E2B3 /* Pods_VServer_VServerUITests.framework */; };
 		D50A6D65DC7B8F9F987C0AB5 /* Pods_VServerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B7F228526DAE1C41F09591 /* Pods_VServerTests.framework */; };
@@ -54,6 +54,13 @@
 			remoteInfo = VServer;
 		};
 		1C0CB506240EFB4700F7DD32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C0CB4DE240EFB4600F7DD32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C0CB4E5240EFB4600F7DD32;
+			remoteInfo = VServer;
+		};
+		1C3C96C9241066B800F9E5AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1C0CB4DE240EFB4600F7DD32 /* Project object */;
 			proxyType = 1;
@@ -105,6 +112,8 @@
 		1C3C96B824105FE800F9E5AC /* LoginViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		1C3C96BA24105FF400F9E5AC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		1C3C96BC24105FFE00F9E5AC /* Success.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Success.storyboard; sourceTree = "<group>"; };
+		1C3C96C4241066B800F9E5AC /* VServerSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VServerSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C3C96C8241066B800F9E5AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43A5C25CA618F1099EDF11B6 /* Pods-VServerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VServerTests.debug.xcconfig"; path = "Target Support Files/Pods-VServerTests/Pods-VServerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5708F70223FCCDBDBCF329C1 /* Pods-VServerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VServerTests.release.xcconfig"; path = "Target Support Files/Pods-VServerTests/Pods-VServerTests.release.xcconfig"; sourceTree = "<group>"; };
 		766FB39E53E89ADB105DE4A0 /* Pods-VServer-VServerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VServer-VServerUITests.release.xcconfig"; path = "Target Support Files/Pods-VServer-VServerUITests/Pods-VServer-VServerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +150,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1C3C96C1241066B800F9E5AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -162,6 +178,7 @@
 				1C0CB4E8240EFB4600F7DD32 /* VServer */,
 				1C0CB4FD240EFB4700F7DD32 /* VServerTests */,
 				1C0CB508240EFB4700F7DD32 /* VServerUITests */,
+				1C3C96C5241066B800F9E5AC /* VServerSnapshotTests */,
 				1C0CB4E7240EFB4600F7DD32 /* Products */,
 				9D5A1A9542CC1F584F88C665 /* Pods */,
 				03CB216C990B6A2DC127084E /* Frameworks */,
@@ -174,6 +191,7 @@
 				1C0CB4E6240EFB4600F7DD32 /* VServer.app */,
 				1C0CB4FA240EFB4700F7DD32 /* VServerTests.xctest */,
 				1C0CB505240EFB4700F7DD32 /* VServerUITests.xctest */,
+				1C3C96C4241066B800F9E5AC /* VServerSnapshotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -346,6 +364,14 @@
 			path = Placeholder;
 			sourceTree = "<group>";
 		};
+		1C3C96C5241066B800F9E5AC /* VServerSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C3C96C8241066B800F9E5AC /* Info.plist */,
+			);
+			path = VServerSnapshotTests;
+			sourceTree = "<group>";
+		};
 		9D5A1A9542CC1F584F88C665 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -422,6 +448,24 @@
 			productReference = 1C0CB505240EFB4700F7DD32 /* VServerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		1C3C96C3241066B800F9E5AC /* VServerSnapshotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C3C96CB241066B800F9E5AC /* Build configuration list for PBXNativeTarget "VServerSnapshotTests" */;
+			buildPhases = (
+				1C3C96C0241066B800F9E5AC /* Sources */,
+				1C3C96C1241066B800F9E5AC /* Frameworks */,
+				1C3C96C2241066B800F9E5AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C3C96CA241066B800F9E5AC /* PBXTargetDependency */,
+			);
+			name = VServerSnapshotTests;
+			productName = VServerSnapshotTests;
+			productReference = 1C3C96C4241066B800F9E5AC /* VServerSnapshotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -440,6 +484,10 @@
 						TestTargetID = 1C0CB4E5240EFB4600F7DD32;
 					};
 					1C0CB504240EFB4700F7DD32 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 1C0CB4E5240EFB4600F7DD32;
+					};
+					1C3C96C3241066B800F9E5AC = {
 						CreatedOnToolsVersion = 10.3;
 						TestTargetID = 1C0CB4E5240EFB4600F7DD32;
 					};
@@ -462,6 +510,7 @@
 				1C0CB4E5240EFB4600F7DD32 /* VServer */,
 				1C0CB4F9240EFB4700F7DD32 /* VServerTests */,
 				1C0CB504240EFB4700F7DD32 /* VServerUITests */,
+				1C3C96C3241066B800F9E5AC /* VServerSnapshotTests */,
 			);
 		};
 /* End PBXProject section */
@@ -488,6 +537,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1C0CB503240EFB4700F7DD32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C3C96C2241066B800F9E5AC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -663,11 +719,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C0CB53D240FC13300F7DD32 /* ValidatorTests.swift in Sources */,
-				1C0CB52B240F4D9600F7DD32 /* ServerViewControllerSnapshotTests.swift in Sources */,
 				1C3C96A924105F5800F9E5AC /* SuccessViewModelTests.swift in Sources */,
 				1C0CB527240F4D2600F7DD32 /* ServerViewModelTests.swift in Sources */,
-				1C3C96AF24105F9400F9E5AC /* SuccessViewControllerSnapshotTests.swift in Sources */,
-				1C3C96B924105FE800F9E5AC /* LoginViewControllerSnapshotTests.swift in Sources */,
 				1C3C96B524105FC800F9E5AC /* LoginViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -683,6 +736,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1C3C96C0241066B800F9E5AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C3C96CF2410672D00F9E5AC /* LoginViewControllerSnapshotTests.swift in Sources */,
+				1C3C96D02410673200F9E5AC /* ServerViewControllerSnapshotTests.swift in Sources */,
+				1C3C96CE2410672600F9E5AC /* SuccessViewControllerSnapshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -695,6 +758,11 @@
 			isa = PBXTargetDependency;
 			target = 1C0CB4E5240EFB4600F7DD32 /* VServer */;
 			targetProxy = 1C0CB506240EFB4700F7DD32 /* PBXContainerItemProxy */;
+		};
+		1C3C96CA241066B800F9E5AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C0CB4E5240EFB4600F7DD32 /* VServer */;
+			targetProxy = 1C3C96C9241066B800F9E5AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -956,6 +1024,44 @@
 			};
 			name = Release;
 		};
+		1C3C96CC241066B800F9E5AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VServerSnapshotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thirstysea.VServerSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VServer.app/VServer";
+			};
+			name = Debug;
+		};
+		1C3C96CD241066B800F9E5AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VServerSnapshotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thirstysea.VServerSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VServer.app/VServer";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -991,6 +1097,15 @@
 			buildConfigurations = (
 				1C0CB515240EFB4700F7DD32 /* Debug */,
 				1C0CB516240EFB4700F7DD32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C3C96CB241066B800F9E5AC /* Build configuration list for PBXNativeTarget "VServerSnapshotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C3C96CC241066B800F9E5AC /* Debug */,
+				1C3C96CD241066B800F9E5AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
