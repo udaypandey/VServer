@@ -15,7 +15,6 @@
 		1C0CB51F240F031D00F7DD32 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB51E240F031D00F7DD32 /* ViewModelType.swift */; };
 		1C0CB521240F4CE700F7DD32 /* ServerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB520240F4CE700F7DD32 /* ServerViewModel.swift */; };
 		1C0CB523240F4D0400F7DD32 /* ServerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB522240F4D0400F7DD32 /* ServerViewController.swift */; };
-		1C0CB525240F4D1300F7DD32 /* Server.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0CB524240F4D1300F7DD32 /* Server.storyboard */; };
 		1C0CB527240F4D2600F7DD32 /* ServerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB526240F4D2600F7DD32 /* ServerViewModelTests.swift */; };
 		1C0CB529240F4D6B00F7DD32 /* ServerViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB528240F4D6B00F7DD32 /* ServerViewControllerUITests.swift */; };
 		1C0CB52B240F4D9600F7DD32 /* ServerViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB52A240F4D9600F7DD32 /* ServerViewControllerSnapshotTests.swift */; };
@@ -26,6 +25,10 @@
 		1C0CB59D240FD0C700F7DD32 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C0CB59F240FD0C700F7DD32 /* Localizable.strings */; };
 		1C0CB5A3240FD1B200F7DD32 /* String+VServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB5A2240FD1B200F7DD32 /* String+VServer.swift */; };
 		1C0CB5A7240FD66F00F7DD32 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB5A6240FD66F00F7DD32 /* Networking.swift */; };
+		1C0CB5AA240FEB4100F7DD32 /* Server.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0CB5A9240FEB4100F7DD32 /* Server.storyboard */; };
+		1C0CB5AD240FEE0400F7DD32 /* UITextField+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB5AC240FEE0400F7DD32 /* UITextField+Rx.swift */; };
+		1C0CB5B2240FEF8E00F7DD32 /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB5B1240FEF8E00F7DD32 /* UIViewController+Storyboard.swift */; };
+		1C3C96A2240FF7CD00F9E5AC /* XCUIElement+VServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96A1240FF7CD00F9E5AC /* XCUIElement+VServer.swift */; };
 		2AD0EE4B2B2835CCBC06005D /* Pods_VServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC8142410BDEDC0E5AD64F4 /* Pods_VServer.framework */; };
 		C9C1E50F7B3E1FEFB53C5F5F /* Pods_VServer_VServerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59003E6C1C7C1D950F7E2B3 /* Pods_VServer_VServerUITests.framework */; };
 		D50A6D65DC7B8F9F987C0AB5 /* Pods_VServerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B7F228526DAE1C41F09591 /* Pods_VServerTests.framework */; };
@@ -63,7 +66,6 @@
 		1C0CB51E240F031D00F7DD32 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		1C0CB520240F4CE700F7DD32 /* ServerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerViewModel.swift; sourceTree = "<group>"; };
 		1C0CB522240F4D0400F7DD32 /* ServerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerViewController.swift; sourceTree = "<group>"; };
-		1C0CB524240F4D1300F7DD32 /* Server.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Server.storyboard; sourceTree = "<group>"; };
 		1C0CB526240F4D2600F7DD32 /* ServerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerViewModelTests.swift; sourceTree = "<group>"; };
 		1C0CB528240F4D6B00F7DD32 /* ServerViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerViewControllerUITests.swift; sourceTree = "<group>"; };
 		1C0CB52A240F4D9600F7DD32 /* ServerViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
@@ -78,6 +80,10 @@
 		1C0CB5A0240FD0CB00F7DD32 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1C0CB5A2240FD1B200F7DD32 /* String+VServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+VServer.swift"; sourceTree = "<group>"; };
 		1C0CB5A6240FD66F00F7DD32 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		1C0CB5A9240FEB4100F7DD32 /* Server.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Server.storyboard; sourceTree = "<group>"; };
+		1C0CB5AC240FEE0400F7DD32 /* UITextField+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Rx.swift"; sourceTree = "<group>"; };
+		1C0CB5B1240FEF8E00F7DD32 /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
+		1C3C96A1240FF7CD00F9E5AC /* XCUIElement+VServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+VServer.swift"; sourceTree = "<group>"; };
 		43A5C25CA618F1099EDF11B6 /* Pods-VServerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VServerTests.debug.xcconfig"; path = "Target Support Files/Pods-VServerTests/Pods-VServerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5708F70223FCCDBDBCF329C1 /* Pods-VServerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VServerTests.release.xcconfig"; path = "Target Support Files/Pods-VServerTests/Pods-VServerTests.release.xcconfig"; sourceTree = "<group>"; };
 		766FB39E53E89ADB105DE4A0 /* Pods-VServer-VServerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VServer-VServerUITests.release.xcconfig"; path = "Target Support Files/Pods-VServer-VServerUITests/Pods-VServer-VServerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +160,7 @@
 		1C0CB4E8240EFB4600F7DD32 /* VServer */ = {
 			isa = PBXGroup;
 			children = (
+				1C0CB5AB240FEDD500F7DD32 /* Rx */,
 				1C0CB52C240F4DEA00F7DD32 /* Coordinator */,
 				1C0CB531240F50AF00F7DD32 /* Network */,
 				1C0CB518240F02BE00F7DD32 /* Views */,
@@ -179,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				1C0CB50B240EFB4700F7DD32 /* Info.plist */,
+				1C3C96A1240FF7CD00F9E5AC /* XCUIElement+VServer.swift */,
 			);
 			path = VServerUITests;
 			sourceTree = "<group>";
@@ -209,9 +217,9 @@
 		1C0CB519240F02D900F7DD32 /* Server */ = {
 			isa = PBXGroup;
 			children = (
+				1C0CB5A9240FEB4100F7DD32 /* Server.storyboard */,
 				1C0CB520240F4CE700F7DD32 /* ServerViewModel.swift */,
 				1C0CB526240F4D2600F7DD32 /* ServerViewModelTests.swift */,
-				1C0CB524240F4D1300F7DD32 /* Server.storyboard */,
 				1C0CB522240F4D0400F7DD32 /* ServerViewController.swift */,
 				1C0CB528240F4D6B00F7DD32 /* ServerViewControllerUITests.swift */,
 				1C0CB52A240F4D9600F7DD32 /* ServerViewControllerSnapshotTests.swift */,
@@ -285,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				1C0CB5A2240FD1B200F7DD32 /* String+VServer.swift */,
+				1C0CB5B1240FEF8E00F7DD32 /* UIViewController+Storyboard.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -295,6 +304,14 @@
 				1C0CB5A6240FD66F00F7DD32 /* Networking.swift */,
 			);
 			path = Vaion;
+			sourceTree = "<group>";
+		};
+		1C0CB5AB240FEDD500F7DD32 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				1C0CB5AC240FEE0400F7DD32 /* UITextField+Rx.swift */,
+			);
+			path = Rx;
 			sourceTree = "<group>";
 		};
 		9D5A1A9542CC1F584F88C665 /* Pods */ = {
@@ -426,7 +443,7 @@
 				1C0CB4F4240EFB4700F7DD32 /* LaunchScreen.storyboard in Resources */,
 				1C0CB4F1240EFB4700F7DD32 /* Assets.xcassets in Resources */,
 				1C0CB4EF240EFB4600F7DD32 /* Main.storyboard in Resources */,
-				1C0CB525240F4D1300F7DD32 /* Server.storyboard in Resources */,
+				1C0CB5AA240FEB4100F7DD32 /* Server.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +608,8 @@
 			files = (
 				1C0CB52E240F4E0700F7DD32 /* CoorindatorType.swift in Sources */,
 				1C0CB5A7240FD66F00F7DD32 /* Networking.swift in Sources */,
+				1C0CB5B2240FEF8E00F7DD32 /* UIViewController+Storyboard.swift in Sources */,
+				1C0CB5AD240FEE0400F7DD32 /* UITextField+Rx.swift in Sources */,
 				1C0CB4EC240EFB4600F7DD32 /* ViewController.swift in Sources */,
 				1C0CB5A3240FD1B200F7DD32 /* String+VServer.swift in Sources */,
 				1C0CB4EA240EFB4600F7DD32 /* AppDelegate.swift in Sources */,
@@ -616,6 +635,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C3C96A2240FF7CD00F9E5AC /* XCUIElement+VServer.swift in Sources */,
 				1C0CB529240F4D6B00F7DD32 /* ServerViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
