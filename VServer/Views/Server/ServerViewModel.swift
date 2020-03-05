@@ -45,16 +45,13 @@ struct ServerViewModel: ViewModeType {
         let networkResponse = networkCall
             .map { response -> Coordinator.Event in
                 if response.success && response.code == 200 {
-//                    return try .didLoginWithSuccess(serverAddress.value())
                     return .didLoginWithoutAuthentication
                 } else if !response.success && response.code == 401 {
-//                    return try .didFailAuthentication(serverAddress.value())
                     return try .didFailLoginWithoutAuthentication(serverAddress.value())
                 } else {
                     return .invalid
                 }
             }
-            .debug("networkresponse")
 
         let isValidServerAddress = serverAddress
             .map { Validator.isValid(serverAddress: $0) }

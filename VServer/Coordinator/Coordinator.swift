@@ -32,7 +32,7 @@ final class Coordinator {
     private var rootViewController: UINavigationController!
     private let network = Networking()
     private let disposeBag = DisposeBag()
-    
+
     init(context: UIWindow) {
         self.context = context
     }
@@ -91,9 +91,13 @@ extension Coordinator {
     }
 
     func loginViewController(serverAddress: String) -> LoginViewController {
-//        let viewModel = SuccessViewModel()
+        let viewModel = LoginViewModel(network: network, serverAddress: serverAddress)
         let viewController: LoginViewController = SuccessViewController.fromStoryboard("Login")
-//        viewController.viewModel = viewModel
+        viewController.viewModel = viewModel
+
+        viewModel.flows.didFinishLogin
+            .drive(self.rx.fsm)
+            .disposed(by: disposeBag)
 
         return viewController
     }

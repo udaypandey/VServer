@@ -13,3 +13,6 @@
 "vserver.server.text.placeholder" = "IP address";
 "vserver.success.text.welcome" = "Server successfully added to the cluster!";
 
+"vserver.login.text.welcome" = "Enter your credentials";
+"vserver.login.text.userNamePlaceholder" = "User Name";
+"vserver.login.text.passwordPlaceholder" = "Password";

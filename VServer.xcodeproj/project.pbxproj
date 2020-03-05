@@ -15,7 +15,6 @@
 		1C0CB523240F4D0400F7DD32 /* ServerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB522240F4D0400F7DD32 /* ServerViewController.swift */; };
 		1C0CB527240F4D2600F7DD32 /* ServerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB526240F4D2600F7DD32 /* ServerViewModelTests.swift */; };
 		1C0CB529240F4D6B00F7DD32 /* ServerViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB528240F4D6B00F7DD32 /* ServerViewControllerUITests.swift */; };
-		1C0CB52E240F4E0700F7DD32 /* CoorindatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB52D240F4E0700F7DD32 /* CoorindatorType.swift */; };
 		1C0CB530240F4E3400F7DD32 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB52F240F4E3400F7DD32 /* Coordinator.swift */; };
 		1C0CB53B240FC11A00F7DD32 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB53A240FC11A00F7DD32 /* Validator.swift */; };
 		1C0CB53D240FC13300F7DD32 /* ValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB53C240FC13300F7DD32 /* ValidatorTests.swift */; };
@@ -87,7 +86,6 @@
 		1C0CB526240F4D2600F7DD32 /* ServerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerViewModelTests.swift; sourceTree = "<group>"; };
 		1C0CB528240F4D6B00F7DD32 /* ServerViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerViewControllerUITests.swift; sourceTree = "<group>"; };
 		1C0CB52A240F4D9600F7DD32 /* ServerViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
-		1C0CB52D240F4E0700F7DD32 /* CoorindatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoorindatorType.swift; sourceTree = "<group>"; };
 		1C0CB52F240F4E3400F7DD32 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		1C0CB53A240FC11A00F7DD32 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		1C0CB53C240FC13300F7DD32 /* ValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorTests.swift; sourceTree = "<group>"; };
@@ -305,7 +303,6 @@
 		1C0CB52C240F4DEA00F7DD32 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				1C0CB52D240F4E0700F7DD32 /* CoorindatorType.swift */,
 				1C0CB52F240F4E3400F7DD32 /* Coordinator.swift */,
 				1C3C96D32410BDE300F9E5AC /* Coordinator+Rx.swift */,
 			);
@@ -701,7 +698,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C0CB52E240F4E0700F7DD32 /* CoorindatorType.swift in Sources */,
 				1C0CB5A7240FD66F00F7DD32 /* Networking.swift in Sources */,
 				1C3C96D224109F4900F9E5AC /* Networking+Rx.swift in Sources */,
 				1C0CB5B2240FEF8E00F7DD32 /* UIViewController+Storyboard.swift in Sources */,

@@ -8,9 +8,9 @@ The app code is structured accordingly and includes unit test cases, UI test cas
 
 ## Status
 
-- I have written the first screen using MVVM + Rx + Coordinator pattern. Its not integrated with the networking code yet.
-- I plan to wrap Networking library into a simple Rx wrapper to integrate with the View Model.
-- I hope to complete the task by end of the day.
+- I have got it running end to end now.
+- Unit test cases and UI Test cases are pending for Login screen
+- Flow tests is commented out for Server screen.
 
 ## Implementation
 
