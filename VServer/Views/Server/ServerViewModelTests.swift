@@ -65,35 +65,71 @@ class ServerViewModelTests: XCTestCase {
         XCTAssertEqual(true, try isValidServerAddress.toBlocking(timeout: 1.0).first())
     }
 
-    // Comment out right now, will come back after I finish login screen
-//    func testServerAddressFlow() {
-//        let disposeBag = DisposeBag()
-//
-//        let network = Networking()
-//        let viewModel = ServerViewModel(network: network)
-//
-//        let isValidServerAddress = viewModel.outputs.isValidServerAddress
-//            .asObservable()
-//
-//        let didFinishServer = viewModel.flows.didFinishServer
-//            .asObservable()
-//
-//        let testObserver = BehaviorSubject<Coordinator.Event?>(value: nil)
-//
-//        didFinishServer
-//            .bind(to: testObserver)
-//            .disposed(by: disposeBag)
-//
-//        // Startup values
-//        XCTAssertEqual(false, try isValidServerAddress.toBlocking(timeout: 1.0).first())
-//
-//        // Valid email
-//        viewModel.inputs.serverAddress.onNext("192.168.0.1")
-//        XCTAssertEqual(true, try isValidServerAddress.toBlocking(timeout: 1.0).first())
-//
-//        viewModel.inputs.okTapped.onNext(())
-//
-//        XCTAssertEqual(Coordinator.Event.didLoginWithAuthentication("192.168.0.1"),
-//                       try testObserver.toBlocking(timeout: 1.0).first())
-//    }
+    func testServerAddressNoAuthenticationFlow() {
+        let disposeBag = DisposeBag()
+
+        let network = Networking()
+        let viewModel = ServerViewModel(network: network)
+
+        let isValidServerAddress = viewModel.outputs.isValidServerAddress
+            .asObservable()
+
+        let didFinishServer = viewModel.flows.didFinishServer
+            .asObservable()
+
+        let testObserver = BehaviorSubject<Coordinator.Event?>(value: nil)
+
+        didFinishServer
+            .bind(to: testObserver)
+            .disposed(by: disposeBag)
+
+        // Startup values
+        XCTAssertEqual(false, try isValidServerAddress.toBlocking(timeout: 1.0).first())
+
+        // Valid email
+        viewModel.inputs.serverAddress.onNext("192.168.0.10")
+        XCTAssertEqual(true, try isValidServerAddress.toBlocking(timeout: 1.0).first())
+
+        viewModel.inputs.okTapped.onNext(())
+
+        let expectation = XCTestExpectation(description: "Delay for PublishSubject")
+        _ = XCTWaiter.wait(for: [expectation], timeout: 5)
+
+        XCTAssertEqual(Coordinator.Event.didLoginWithoutAuthentication,
+                       try testObserver.toBlocking(timeout: 1.0).first())
+    }
+
+    func testServerAddressPromptForAuthenticationFlow() {
+        let disposeBag = DisposeBag()
+
+        let network = Networking()
+        let viewModel = ServerViewModel(network: network)
+
+        let isValidServerAddress = viewModel.outputs.isValidServerAddress
+            .asObservable()
+
+        let didFinishServer = viewModel.flows.didFinishServer
+            .asObservable()
+
+        let testObserver = BehaviorSubject<Coordinator.Event?>(value: nil)
+
+        didFinishServer
+            .bind(to: testObserver)
+            .disposed(by: disposeBag)
+
+        // Startup values
+        XCTAssertEqual(false, try isValidServerAddress.toBlocking(timeout: 1.0).first())
+
+        // Valid email
+        viewModel.inputs.serverAddress.onNext("192.168.0.11")
+        XCTAssertEqual(true, try isValidServerAddress.toBlocking(timeout: 1.0).first())
+
+        viewModel.inputs.okTapped.onNext(())
+
+        let expectation = XCTestExpectation(description: "Delay for PublishSubject")
+        _ = XCTWaiter.wait(for: [expectation], timeout: 5)
+
+        XCTAssertEqual(Coordinator.Event.didFailLoginWithoutAuthentication("192.168.0.11"),
+                       try testObserver.toBlocking(timeout: 1.0).first())
+    }
 }

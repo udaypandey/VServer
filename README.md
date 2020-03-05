@@ -8,9 +8,13 @@ The app code is structured accordingly and includes unit test cases, UI test cas
 
 ## Status
 
-- I have got it running end to end now.
-- Unit test cases and UI Test cases are pending for Login screen
-- Flow tests is commented out for Server screen.
+- I have finished all 3 screens and the behaviour is as per the spec. There are 10 unit test cases and 3 UI Test Cases to test the app.
+
+## Whats Not Finished
+
+- I did not finish UI Test case for login screen
+- I did not have enough time to write snapshot test cases
+- UI Test cases needs to be run manually changing the App Delegate to point to the specific screen. I did not have time to add the launch environment utilty to flip the screen for UI Testing.
 
 ## Implementation
 
