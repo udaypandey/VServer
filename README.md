@@ -35,3 +35,6 @@ The app code is structured accordingly and includes unit test cases, UI test cas
 
 - The app uses Swiftlint, RxSwift, Snapshot testing open source libraries. I have been using Rx for my projects lately and the app uses Rx to drive the app end to end.
 - I picked some common utilities and extensions that I generally use in all my projects and they are added as various extensions to UIKit or Rx.
+
+## Changes in Networking Code
+- I changed the IP Address for already authenticated server 192.268.0.11. 268 is probably a typo and was failing IP address validation

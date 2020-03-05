@@ -136,7 +136,7 @@ extension Networking {
                 completionHandler(NetworkingResponse(success: true, code: 200, message: "Ok"))
                 __connected = true
 
-            case "192.268.0.11":
+            case "192.168.0.11":
                 if credentials?.username == "vaion" && credentials?.password == "password" {
                     completionHandler(NetworkingResponse(success: true, code: 200, message: "Ok"))
                     __connected = true

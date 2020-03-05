@@ -17,21 +17,16 @@ struct ServerViewModel: ViewModeType {
     let flows: Flows
     let texts: Texts
 
-    private let network: NetworkingProtocol
+    private let network: Networking
 
-    init(network: NetworkingProtocol) {
+    init(network: Networking) {
         self.network = network
-        
+
         let serverAddress = BehaviorSubject<String>(value: "")
         let okTapped = PublishSubject<Void>()
 
         inputs = Inputs(serverAddress: serverAddress.asObserver(),
                         okTapped: okTapped.asObserver())
-
-        let isValidServerAddress = serverAddress
-            .map { Validator.isValid(serverAddress: $0) }
-            .asDriver(onErrorJustReturn: false)
-        outputs = Outputs(isValidServerAddress: isValidServerAddress)
 
         let welcomeText = Driver.just("vserver.server.text.welcome".localized)
         let placeholderText = Driver.just("vserver.server.text.placeholder".localized)
@@ -40,11 +35,41 @@ struct ServerViewModel: ViewModeType {
                       placeholderText: placeholderText,
                       okText: okText)
 
-        let didSelectServer = okTapped
+        let networkCall = okTapped
             .withLatestFrom(serverAddress)
-            .map { Event.didSelectServer($0) }
-            .asDriver(onErrorJustReturn: .didSelectServer(""))
-        flows = Flows(didSelectServer: didSelectServer)
+            .flatMap { serverAddress in
+                network.rx.connectToServer(ipAddress: serverAddress)
+            }
+            .share(replay: 1, scope: .whileConnected)
+
+        let networkResponse = networkCall
+            .map { response -> Event in
+                if response.success && response.code == 200 {
+                    return try .didLoginWithSuccess(serverAddress.value())
+                } else if !response.success && response.code == 401 {
+                    return try .didFailAuthentication(serverAddress.value())
+                } else {
+                    return .invalid
+                }
+            }
+            .debug("networkresponse")
+
+        let isValidServerAddress = serverAddress
+            .map { Validator.isValid(serverAddress: $0) }
+            .asDriver(onErrorJustReturn: false)
+
+        let errorMessage = "vserver.common.error".localized
+        let showError = networkResponse.filter { $0 == .invalid }
+            .map { _ in errorMessage }
+            .asDriver(onErrorJustReturn: "")
+
+        outputs = Outputs(isValidServerAddress: isValidServerAddress, showError: showError)
+
+        let didFinishServer = networkResponse
+            .filter { $0 != .invalid }
+            .asDriver(onErrorJustReturn: .invalid)
+
+        flows = Flows(didFinishServer: didFinishServer)
     }
 }
 
@@ -56,6 +81,7 @@ extension ServerViewModel {
 
     struct Outputs {
         let isValidServerAddress: Driver<Bool>
+        let showError: Driver<String>
     }
 
     struct Texts {
@@ -65,10 +91,13 @@ extension ServerViewModel {
     }
 
     struct Flows {
-        let didSelectServer: Driver<Event>
+        let didFinishServer: Driver<Event>
     }
 
     enum Event: Equatable {
-        case didSelectServer(_ addresss: String)
+        case invalid
+
+        case didLoginWithSuccess(_ addresss: String)
+        case didFailAuthentication(_ address: String)
     }
 }

@@ -57,6 +57,18 @@ final class ServerViewController: UIViewController {
         serverAddressTextField.rx.text.orEmpty
             .bind(to: viewModel.inputs.serverAddress)
             .disposed(by: disposeBag)
+
+        okButton.rx.tap
+            .bind(to: viewModel.inputs.okTapped)
+            .disposed(by: disposeBag)
+
+        viewModel.outputs.showError
+            .drive(onNext: { errorMessage in
+                let alert = UIAlertController(title: errorMessage, message: "Host not found", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true)
+            })
+            .disposed(by: disposeBag)
     }
 
     private func setupAccesibilityIdentifiers() {

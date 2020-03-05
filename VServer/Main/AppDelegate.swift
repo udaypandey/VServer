@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
 
         // Test code till I added coordinator
-//        window?.rootViewController = UIViewController.serverViewController()
-        window?.rootViewController = UIViewController.successViewController()
+        window?.rootViewController = UIViewController.serverViewController()
+//        window?.rootViewController = UIViewController.successViewController()
 
         window?.makeKeyAndVisible()
 

@@ -59,9 +59,9 @@
                         <viewLayoutGuide key="safeArea" id="7fK-0q-SHN"/>
                     </view>
                     <connections>
-                        <outlet property="okButton" destination="YWa-iq-UnB" id="kVA-2l-IFG"/>
-                        <outlet property="serverAddressTextField" destination="6VE-Ni-2jP" id="P6t-ti-JEy"/>
-                        <outlet property="welcomeText" destination="guw-gR-1mu" id="gIl-ap-uiK"/>
+                        <outlet property="okButton" destination="YWa-iq-UnB" id="Krq-ue-uKK"/>
+                        <outlet property="serverAddressTextField" destination="6VE-Ni-2jP" id="d0e-hz-JUK"/>
+                        <outlet property="welcomeText" destination="guw-gR-1mu" id="Fc6-mB-aPO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z5P-3z-bim" userLabel="First Responder" sceneMemberID="firstResponder"/>
