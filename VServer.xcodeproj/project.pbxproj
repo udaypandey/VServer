@@ -41,6 +41,7 @@
 		1C3C96CF2410672D00F9E5AC /* LoginViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96B824105FE800F9E5AC /* LoginViewControllerSnapshotTests.swift */; };
 		1C3C96D02410673200F9E5AC /* ServerViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CB52A240F4D9600F7DD32 /* ServerViewControllerSnapshotTests.swift */; };
 		1C3C96D224109F4900F9E5AC /* Networking+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96D124109F4900F9E5AC /* Networking+Rx.swift */; };
+		1C3C96D42410BDE300F9E5AC /* Coordinator+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C96D32410BDE300F9E5AC /* Coordinator+Rx.swift */; };
 		2AD0EE4B2B2835CCBC06005D /* Pods_VServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC8142410BDEDC0E5AD64F4 /* Pods_VServer.framework */; };
 		C9C1E50F7B3E1FEFB53C5F5F /* Pods_VServer_VServerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59003E6C1C7C1D950F7E2B3 /* Pods_VServer_VServerUITests.framework */; };
 		D50A6D65DC7B8F9F987C0AB5 /* Pods_VServerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B7F228526DAE1C41F09591 /* Pods_VServerTests.framework */; };
@@ -116,6 +117,7 @@
 		1C3C96C4241066B800F9E5AC /* VServerSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VServerSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3C96C8241066B800F9E5AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C3C96D124109F4900F9E5AC /* Networking+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Networking+Rx.swift"; sourceTree = "<group>"; };
+		1C3C96D32410BDE300F9E5AC /* Coordinator+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator+Rx.swift"; sourceTree = "<group>"; };
 		43A5C25CA618F1099EDF11B6 /* Pods-VServerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VServerTests.debug.xcconfig"; path = "Target Support Files/Pods-VServerTests/Pods-VServerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5708F70223FCCDBDBCF329C1 /* Pods-VServerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VServerTests.release.xcconfig"; path = "Target Support Files/Pods-VServerTests/Pods-VServerTests.release.xcconfig"; sourceTree = "<group>"; };
 		766FB39E53E89ADB105DE4A0 /* Pods-VServer-VServerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VServer-VServerUITests.release.xcconfig"; path = "Target Support Files/Pods-VServer-VServerUITests/Pods-VServer-VServerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 			children = (
 				1C0CB52D240F4E0700F7DD32 /* CoorindatorType.swift */,
 				1C0CB52F240F4E3400F7DD32 /* Coordinator.swift */,
+				1C3C96D32410BDE300F9E5AC /* Coordinator+Rx.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -710,6 +713,7 @@
 				1C3C96B124105FAD00F9E5AC /* LoginViewModel.swift in Sources */,
 				1C3C96AD24105F7C00F9E5AC /* SuccessViewController.swift in Sources */,
 				1C0CB523240F4D0400F7DD32 /* ServerViewController.swift in Sources */,
+				1C3C96D42410BDE300F9E5AC /* Coordinator+Rx.swift in Sources */,
 				1C0CB521240F4CE700F7DD32 /* ServerViewModel.swift in Sources */,
 				1C3C96B324105FBA00F9E5AC /* LoginViewController.swift in Sources */,
 				1C3C96A724105F4C00F9E5AC /* SuccessViewModel.swift in Sources */,

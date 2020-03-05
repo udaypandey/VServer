@@ -43,11 +43,13 @@ struct ServerViewModel: ViewModeType {
             .share(replay: 1, scope: .whileConnected)
 
         let networkResponse = networkCall
-            .map { response -> Event in
+            .map { response -> Coordinator.Event in
                 if response.success && response.code == 200 {
-                    return try .didLoginWithSuccess(serverAddress.value())
+//                    return try .didLoginWithSuccess(serverAddress.value())
+                    return .didLoginWithoutAuthentication
                 } else if !response.success && response.code == 401 {
-                    return try .didFailAuthentication(serverAddress.value())
+//                    return try .didFailAuthentication(serverAddress.value())
+                    return try .didFailLoginWithoutAuthentication(serverAddress.value())
                 } else {
                     return .invalid
                 }
@@ -91,13 +93,6 @@ extension ServerViewModel {
     }
 
     struct Flows {
-        let didFinishServer: Driver<Event>
-    }
-
-    enum Event: Equatable {
-        case invalid
-
-        case didLoginWithSuccess(_ addresss: String)
-        case didFailAuthentication(_ address: String)
+        let didFinishServer: Driver<Coordinator.Event>
     }
 }
