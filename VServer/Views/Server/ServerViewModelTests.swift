@@ -15,7 +15,8 @@ import RxSwift
 
 class ServerViewModelTests: XCTestCase {
     func testServerStaticText() {
-        let viewModel = ServerViewModel()
+        let network = Networking()
+        let viewModel = ServerViewModel(network: network)
 
         let welcomeText = viewModel.texts.welcomeText
             .asObservable()
@@ -35,7 +36,9 @@ class ServerViewModelTests: XCTestCase {
     func testServerAddressInput() {
         let scheduler = ConcurrentDispatchQueueScheduler(qos: .default)
 
-        let viewModel = ServerViewModel()
+        let network = Networking()
+        let viewModel = ServerViewModel(network: network)
+
         let isValidServerAddress = viewModel.outputs.isValidServerAddress
             .asObservable()
             .subscribeOn(scheduler)
@@ -65,7 +68,9 @@ class ServerViewModelTests: XCTestCase {
     func testServerAddressFlow() {
         let disposeBag = DisposeBag()
 
-        let viewModel = ServerViewModel()
+        let network = Networking()
+        let viewModel = ServerViewModel(network: network)
+
         let isValidServerAddress = viewModel.outputs.isValidServerAddress
             .asObservable()
 

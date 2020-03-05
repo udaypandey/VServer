@@ -10,7 +10,8 @@ import UIKit
 // This is a placeholder code till I integrate coordinator pattern code to screens
 extension UIViewController {
     static func serverViewController() -> UIViewController {
-        let viewModel = ServerViewModel()
+        let network = Networking()
+        let viewModel = ServerViewModel(network: network)
         let viewController: ServerViewController = ServerViewController.fromStoryboard("Server")
         viewController.viewModel = viewModel
 

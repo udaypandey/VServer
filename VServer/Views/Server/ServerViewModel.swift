@@ -17,7 +17,11 @@ struct ServerViewModel: ViewModeType {
     let flows: Flows
     let texts: Texts
 
-    init() {
+    private let network: NetworkingProtocol
+
+    init(network: NetworkingProtocol) {
+        self.network = network
+        
         let serverAddress = BehaviorSubject<String>(value: "")
         let okTapped = PublishSubject<Void>()
 
