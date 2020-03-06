@@ -2,9 +2,9 @@
 
 ## Salient Points
 
-This is a prototype application to show a server onboarding journey. This is still WIP and I will continue to update the code. While there are only 3 screens that needs to be build, I have used the architecture that I may use for a real enterprise app. 
+This is a prototype application to show a server onboarding journey. While there are only 3 screens and a fairly simple workflow, this showcases an extensible app architecture that will scale. 
 
-The app code is structured accordingly and includes unit test cases, UI test cases and provision for snapshot testing.
+The app code includes unit test cases, UI test cases and provision for snapshot testing.
 
 ## Status
 
@@ -12,15 +12,15 @@ The app code is structured accordingly and includes unit test cases, UI test cas
 
 ## Whats Not Finished
 
-- I did not finish UI Test case for login screen
-- I did not have enough time to write snapshot test cases
+- Did not finish UI Test case for login screen. The UI test cases are there for other screens for reference.
+- Did not have enough time to write snapshot test cases.
 - UI Test cases needs to be run manually changing the App Delegate to point to the specific screen. I did not have time to add the launch environment utilty to flip the screen for UI Testing.
 
 ## Implementation
 
 - The app is written using RxSwift.
 - The app uses MVVM + Coordinator pattern.
-
+- Coordinator pattern has a fairly simple event triggered FSM. A more involved app may need a (State, Event) driven FSM that can be tested too and leaving the side affects (instantiating view controllers) untested or tested separately.
 
 ## Test Cases
 
@@ -31,7 +31,7 @@ The app code is structured accordingly and includes unit test cases, UI test cas
 
 ## Styling
 
-- Not much effort has been put into styling. Instead I have put more effort on the architecture and the testability of the code.
+- Not much effort has been put into styling for the screens. Instead I have put more effort on demonstrating the architecture and the testability of the code.
 - All screens uses UIStackView for layout and screens are created in storyboard for quick iteration. The styling is done in both storyboard and in code though I prefer to do styling in code so it can be tested on its own.
 - Storyboards are used for creating View Controllers but the navigation will be managed using Controller pattern and that will be unit tested too.
 
@@ -41,4 +41,4 @@ The app code is structured accordingly and includes unit test cases, UI test cas
 - I picked some common utilities and extensions that I generally use in all my projects and they are added as various extensions to UIKit or Rx.
 
 ## Changes in Networking Code
-- I changed the IP Address for already authenticated server 192.268.0.11. 268 is probably a typo and was failing IP address validation
+- I changed the IP Address for already authenticated server 192.268.0.11. 268 is probably a typo and was failing IP address validation.
